@@ -1,12 +1,13 @@
 'use strict';
 
 const express = require('express');
+require('dotenv').config();
 
 const pokeData = require('./assets/poke.json')
 
 const server = express();
 
-const PORT = 3001;
+const PORT = process.env.PORT;
 
 
 
